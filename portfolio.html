@@ -132,10 +132,18 @@
       top: 0px;
     }
    
+   .progress{
+        width: 250px;
+   }
+
+   #about {
+       background-image: url('./images/hero.jpg');
+       background-position: center center;
+       
+   }
 </style>
 
 <body>
-
     <header id="masthead" class="site-header" data-anchor-target=".hero"
         style="box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2) white;">
         <nav id="primary-navigation" class="site-navigation">
@@ -200,7 +208,6 @@
                     <div class="col-md-6 col-md-offset-3">
                         <h2>About Me</h2>
                         <img style="margin-left: 160px;" src="./images/lines.svg" class="img-lines" alt="lines">
-
                         <div style="width: 200px;height: 200px;margin-top: -200px;margin-left: -200px; margin-right: 50px;"
                             id="me"></div>
                         <div style="margin-left: 20px;">
@@ -233,7 +240,7 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <h2>Education</h2>
-                        <img src="./images/lines.svg" class="img-lines" alt="lines">
+                        <img style="margin-left:170px;" src="./images/lines.svg" class="img-lines" alt="lines">
                         <div class="edubox">
                             <div style="margin-bottom: 10px; margin-left: 5px;">
                                 <span id="maintitle">쌍용교육센터 - Java 기반 멀티 플랫폼 응용 SW개발자 양성 과정</span>
@@ -354,7 +361,7 @@
                             <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div><!-- /.progress-bar -->
                         </div><!-- /.progress -->
                     </div><!-- /.skill -->
-                    <img style="display: block; margin-left: 80px;margin-top: 130px;" src = "./images/front-end.png">
+                    <img style="display: block; margin-left: 30px;margin-top: 130px;" src = "./images/front-end.png">
                 </div>
                 <div class="col-md-4">
                     <span class = "skill-title">Back-end</span>
@@ -382,7 +389,7 @@
                             <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div><!-- /.progress-bar -->
                         </div><!-- /.progress -->
                     </div><!-- /.skill -->
-                    <img style="display: block; margin-left: 50px;margin-top: 20px;" src = "./images/back-end.png">
+                    <img style="display: block; margin-left: 5px;margin-top: 20px;" src = "./images/back-end.png">
                 </div>
                 <div class="col-md-4">
                     <span class = "skill-title">FrameWork</span>
@@ -411,7 +418,7 @@
                             <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div><!-- /.progress-bar -->
                         </div><!-- /.progress -->
                     </div><!-- /.skill -->
-                    <img style="display: block; margin-left: 80px;margin-top: 60px;" src = "./images/etc.png">
+                    <img style="display: block; margin-left: 20px;margin-top: 60px;" src = "./images/etc.png">
                 </div>
             </div>
         </div>
@@ -536,14 +543,32 @@
     <section id="contact" class="site-section section-form text-center">
         <div class="container">
 
-            <h3 style="padding-left: 100px;">Contact Me</h3>
+            <h3 style="padding-left: 100px;margin-top: -90px;">Contact Me</h3>
             <img style="margin-left:-90px" src="./images/lines.svg" class="img-lines" alt="lines">
             <div class = "contact-content"><span style="font-size: 2em; padding-left: 420px;padding-right: 20px; position: relative;top: 7px;" class = "glyphicon glyphicon-envelope"></span><span>ithansiyeon@nate.com</span></div>
             <div class = "contact-content"><span style="font-weight: bold;font-size: 1.5em;padding-left: 650px;">Github : </span><span>https://github.com/ithansiyeon?tab=repositories</span></div>
-
+            <div class = "contact-content"><span style="font-weight: bold;font-size: 1.5em;padding-left: 650px;"><img style="width: 100px; margin-left: -190px;" src = "./images/talk.png">카카오톡 ID : </span>hansi97<span></span></div>
         </div>
     </section><!-- /.section-form -->
 
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <a class="icon facebook-bg" href="#"><i class="icon-facebook"></i></a>
+                    <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
+                    <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+                </div>
+                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">  Copyright &copy; 2020. All Rights Reserved</p></div>
+                <div class="col-sm-4 col-xs-3">
+                    <div class="text-right page-scroll">
+                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- /#footer -->
     <script>
         // window.scrollTo(0, 0);
         var flag = false;
