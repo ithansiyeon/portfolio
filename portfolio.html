@@ -1,3 +1,11 @@
+<!--
+    작성자 : SiYeon Han
+    파일명 : index.html
+    작성일자 : 2020.07.22. ~ 2020.08.7
+    최근 수정날짜 : 2020.08.21.
+    프로그램명 : SiYeon Han's Portfolio
+    상세설명 : 포트폴리오 사이트입니다.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +16,7 @@
 </head>
 <link rel="stylesheet" href="./css/jquery-ui.css">
 <link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="./js/jquery-1.12.4.js"></script>
 <script src="./js/jquery-ui.js"></script>
 <script src="./js/bootstrap.js"></script>
@@ -23,6 +32,7 @@
 <link href="./css/style.css" rel="stylesheet">
 <link href="./css/responsive.css" rel="stylesheet">
 
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
 <style>
     html,
     body {
@@ -139,7 +149,6 @@
    #about {
        background-image: url('./images/hero.jpg');
        background-position: center center;
-       
    }
 </style>
 
@@ -150,14 +159,14 @@
             <div class="container">
                 <div class="navbar-header page-scroll">
 
-                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse"
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse"
                         aria-expanded="false">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
+                    </button> -->
 
-                    <a href="#hero" class="site-logo"><img style="width: 200px;" src="./images/logo.png" alt="logo" id="logo"></a>
+                    <a href="http://127.0.0.1:5501/portfolio.html" class="site-logo"><img style="width: 200px;" src="./images/logo.png" alt="logo" id="logo"></a>
 
                 </div><!-- /.navbar-header -->
 
@@ -168,7 +177,7 @@
                         <li class="page-scroll"><a href="#hero">Home</a></li>
                         <li class="page-scroll"><a href="#about">About</a></li>
                         <li class="page-scroll"><a href="#education">Education</a></li>
-                        <li class="page-scroll"><a href="#about">Skills</a></li>
+                        <li class="page-scroll"><a href="#skills">Skills</a></li>
                         <li class="page-scroll"><a href="#service">Service</a></li>
                         <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
                         <li class="page-scroll"><a href="#contact">Contact</a></li>
@@ -334,7 +343,7 @@
     </main>
     <div style="clear: both;"></div>
 
-    <section style="margin-top: -120px;" class="site-section section-skills">
+    <section id = "skills" style="margin-top: -120px;" class="site-section section-skills">
         <div class="container">
             <div class="text-center">
                 <h3 style="padding-left: 10px;">My Skills</h3>
@@ -425,7 +434,7 @@
     </section><!-- /.secton-skills -->
 
     
-    <section style="margin-top:-250px" id="service" class="site-section section-services overlay text-center">
+    <section style="margin-top:-250px;" id="service" class="site-section section-services overlay text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -554,15 +563,12 @@
     <footer id="colophon" class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                    <a class="icon facebook-bg" href="#"><i class="icon-facebook"></i></a>
-                    <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
-                    <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
-                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+                <div class="col-sm-4 col-xs-12"></div>
+                    <a href="https://github.com/ithansiyeon?tab=repositories"><i class="fa fa-github-alt" style="position: relative; left:-500px;top:40px;font-size:48px;margin-left:100px;color:white"></i></a>
                 </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">  Copyright &copy; 2020. All Rights Reserved</p></div>
+                <div style="margin-left: 350px;" class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">  Copyright &copy; 2020. All Rights Reserved</p></div>
                 <div class="col-sm-4 col-xs-3">
-                    <div class="text-right page-scroll">
+                    <div style="width: 50px; margin-left: 350px;" class="text-right page-scroll">
                         <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
                     </div>
                 </div>
@@ -577,9 +583,10 @@
             $("#hero").css("height", window.screen.height);
         };
 
-        $(document).scroll(function () {
+        $(window).scroll(function () {
+            console.log($(window).scrollTop());
             //메뉴가 시야에서 사라지는 순간 -> 메뉴를 붙박이로 만들기
-            if ($(document).scrollTop() > $(".site-header").position().top) {
+            if ($(window).scrollTop() > $(".site-header").position().top) {
                 // alert();
                 $(".site-header").css({
                     position: "fixed",
@@ -587,19 +594,19 @@
                     bottom: "",
                     width: "100%",
                     boxShadow: "0px 0px 20px 6px rgba(0,0,0,0.2)",
-                    height:"80px"
+                    height:"80px",
+                    "background-color":"white"
                    
                 });
-            } else  if ($(".site-header").position().top == 0) {
+            } else  if ($(window).scrollTop() == 0) {
                 $(".site-header").css({
-                    boxShadow: "none"
+                    boxShadow: "none",
+                    "background-color":""
                 });
             }
         });
 
-        
-        //console.log($("#menu").css("top"));
-        // style="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);"
+           
 
     </script>
 </body>

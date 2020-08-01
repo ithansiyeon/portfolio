@@ -38,11 +38,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
  
-.icon-twitter:before { content: '\f099'; } /* '' */
-.icon-facebook:before { content: '\f09a'; } /* '' */
-.icon-gplus:before { content: '\f0d5'; } /* '' */
-.icon-linkedin:before { content: '\f0e1'; } /* '' */
-.icon-linkedin:before { content: '\f0e1'; } /* '' */
+
 .icon-up:before { content: '\f176'; } /* '' */
 
 /* CUSTOM RESETS
@@ -165,8 +161,8 @@ html, body {
 /* HEADER
 ================================================== */
 .site-header {
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     top: 0; 
     width: 100%;
     background-color: transparent;
