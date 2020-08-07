@@ -440,7 +440,7 @@ html, body {
 }
 
 /* Modal */
-.modal {
+/* .modal {
     z-index: 9999;
 }
 
@@ -483,7 +483,7 @@ html, body {
 
 .modal-footer {
     text-align: center;
-}
+} */
 
 /* Section: Counters */
 .section-counters {
