@@ -6,6 +6,7 @@
     프로그램명 : SiYeon Han's Portfolio
     상세설명 : 포트폴리오 사이트입니다.
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,6 +41,7 @@
     body {
         margin: 0;
         padding: 0;
+        width: 100%;
     }
 
     #hero {
@@ -149,30 +151,57 @@
     }
 
     #about {
-        background-image: url('./images/hero.jpg');
-        background-position: center center;
+        /* background: linear-gradient(45deg,black,white); */
+        /* background-position: center center; */
+        margin-top: -100px;
+        /* margin-left: 100px; */
+
+    }
+
+    .img1 {
+        height: 50px;
     }
 
     #education {
-        margin-top: -180px;
+        margin-top: -100px;
+        /* margin-left: -30px; */
     }
 
-    /* .hideme {
-        opacity: 0;
-    } */
+    #service {
+        margin-top: 0px;
+        padding-top: -10px;
+        padding-bottom: -20px;
+    }
 
     .line-skill ul li {
-      margin-top: 10px;
-      line-height: 80%;
+        margin-top: 10px;
+        line-height: 80%;
     }
 
-    .skill-title{
+    .skill-title {
         font-weight: bold;
         font-size: 1.5em;
     }
 
-   .skill h4{
+    .skill {
+        margin-top: 10px;
+    }
+
+    .skill h4 {
         font-size: 15px;
+    }
+
+    #middle {
+        margin-left: 150px;
+    }
+
+    .contact-content {
+        margin-bottom: 5px;
+    }
+
+    #git:hover{
+        cursor: pointer;
+        opacity: 0.5;
     }
 </style>
 
@@ -233,46 +262,51 @@
         </div>
     </div><!-- /.hero -->
 
-    <div id="container">
-        <div class="hideme">
-            <main id="main" class="site-main">
-                <section id="about" class="site-section section-about">
-                    <div class="container" id="about">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <h2>About Me</h2>
-                                <img style="margin-left: 160px;" src="./images/lines.svg" class="img-lines" alt="lines">
-                                <div style="width: 200px;height: 200px;margin-top: -200px;margin-left: -200px; margin-right: 50px;"
-                                    id="me"></div>
-                                <div style="margin-left: 20px;">
-                                    <span class="subtitle">웹 개발자 한시연</span>
-                                    <p>실패를 두려워 하지 않는 개발자, 성장을 하는 개발자, 끈기 있는 개발자</p>
-                                    <span class="subtitle">Certificates & Languages</span>
-                                    <ul>
-                                        <li>정보처리기사</li>
-                                        <li>네트워크 관리사 2급</li>
-                                        <li>컴퓨터활용능력 2급</li>
-                                        <li>TOEIC(810)</li>
-                                        <li>OPIC(IM2)</li>
-                                    </ul>
-                                    <span class="subtitle">Experience</span>
-                                    <p>가톨릭대학교 통신 네트워크 연구실 : 1년</p>
-                                </div>
-                                <div style="margin-top: 100px;margin-left: 60px;">
-                                    <a href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf"
-                                        class="btn btn-fill" target="_blank" download>자기소개서</a>
-                                    <a href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf"
-                                        class="btn btn-fill" target="_blank" download>이력서</a>
-                                </div>
+    <div id="middle">
+
+        <main id="main" class="site-main">
+            <section id="about" class="site-section section-about">
+                <div class="container" id="about">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <h2>About Me</h2>
+                            <img style="margin-left: 160px;" src="./images/lines.svg" class="img-lines" alt="lines">
+                            <div style="width: 200px;height: 500px;margin-top: -340px;margin-left: -200px; margin-right: 50px;"
+                                id="me"></div>
+                            <div style="margin-left: 20px; margin-top: -180px;">
+                                <span class="subtitle">웹 개발자 한시연</span>
+                                <p>실패를 두려워 하지 않는 개발자, 성장을 하는 개발자, 끈기 있는 개발자</p>
+                                <div style="margin-top: -30px;">
+                                <span style="margin-top: -30px;" class="subtitle"><img class = "img1" src = ./images/상장.png>Certificates & Languages</span><span
+                                    style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[취득일]</span>
+                                <ul style="margin-left: 80px;margin-top: -20px;">
+                                    <li>정보처리기사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        [2019-11-22]</li>
+                                    <li>네트워크 관리사 2급 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-05-21]</li>
+                                    <li>컴퓨터활용능력 2급 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-02-22]</li>
+                                    <li>TOEIC(810)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        [2019-09-07]</li>
+                                    <li>OPIC(IM2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        [2019-03-16]</li>
+                                </ul>
+                                <span class="subtitle"><img class = "img1" src = "./images/경험.png">Experience</span>
+                                <p style="padding-left: 80px; margin-top: -20px;">가톨릭대학교 통신 네트워크 연구실 : 1년</p>
+                            </div>
+                            <div style="margin-top: 100px;margin-left: 60px;">
+                                <a href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf"
+                                    class="btn btn-fill" target="_blank" download>자기소개서</a>
+                                <a href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf"
+                                    class="btn btn-fill" target="_blank" download>이력서</a>
                             </div>
                         </div>
+                        </div>
                     </div>
-                </section><!-- /.secton-about -->
-        </div>
-    
-        <div class="hideme">
+                </div>
+            </section><!-- /.secton-about -->
+
+
             <section id="education" class="site-section section-Education">
-                <div class="container" id="edu">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <h2>Education</h2>
@@ -280,9 +314,9 @@
                             <div class="edubox">
                                 <div style="margin-bottom: 10px; margin-left: 5px;">
                                     <span id="maintitle">쌍용교육센터 - Java 기반 멀티 플랫폼 응용 SW개발자 양성 과정</span>
-                                    <span style="padding-left: 90px;">2020-03-20 ~ 2020-09-08</span><br>
+                                    <span style="padding-left: 90px;">2020-04-06 ~ 2020-09-18</span><br>
                                 </div>
-    
+
                                 <div class="subject-sist">
                                     <ul>
                                         <li>Open JDK 자바 프로그래밍</li>
@@ -300,8 +334,9 @@
                             </div>
                             <div class="edubox1">
                                 <div style="margin-bottom: 10px; margin-left: 5px;">
-                                    <span id="maintitle">가톨릭대학교 - 공학사</span> <span style="padding-left: 543px;">2020-03-20 ~
-                                        2020-09-08</span><br><span>(정보통신전자공학부)</span>
+                                    <span id="maintitle">가톨릭대학교 - 공학사</span> <span
+                                        style="padding-left: 543px;">2016-03-02 ~
+                                        2020-02-13</span><br><span>(정보통신전자공학부)</span>
                                     <br>
                                 </div>
                                 <div class="subject-uni" style="float: left;">
@@ -367,483 +402,499 @@
                     </div>
                 </div>
             </section><!-- /.secton-Education -->
-            </main>
-        </div>
+        </main>
+
         <div style="clear: both;"></div>
-    
-        <div class="hideme" data-fade-in-speed="800">
-            <section id="skills" style="margin-top: -120px;" class="site-section section-skills">
-                <div class="container">
-                    <div class="text-center">
-                        <h3 style="padding-left: 10px;">My Skills</h3>
-                        <img style="margin-left: -170px;" src="./images/lines.svg" class="img-lines" alt="lines">
+
+        <section id="skills" style="margin-top: -180px;" class="site-section section-skills">
+            <div class="container">
+                <div class="text-center">
+                    <h3 style="padding-left: 60px;">My Skills</h3>
+                    <img style="margin-left: -120px;" src="./images/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <!-- <div class="row"> -->
+                <div class="col-md-4">
+                    <span class="skill-title">Front-end</span>
+                    <div class="skill">
+                        <h4>- Html <img style="display:inline-block;padding-left: 10px;" src="./images/front1.png">
+                        </h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li>웹 페이지 기본 구조와 작성 방법</li>
+                            </ul>
+                            <ul>
+                                <li>HTML5 기본 태그</li>
+                            </ul>
+                            <ul>
+                                <li>HTML5 입력 양식 태그와 구조화 태그</li>
+                            </ul>
+                        </div>
+                    </div><!-- /.skill -->
+
+                    <div class="skill">
+                        <h4>- CSS <img style="display:inline-block;padding-left: 20px;" src="./images/front2.png">
+                        </h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                    <div class="line-skill">
+                        <ul>
+                            <li>CSS의 기본 문법</li>
+                        </ul>
+                        <ul>
+                            <li>CSS 속성</li>
+                        </ul>
+                        <ul>
+                            <li>CSS 박스 모델</li>
+                        </ul>
+                        <ul>
+                            <li>그리드</li>
+                        </ul>
+                        <ul>
+                            <li>CSS 선택자의 기본</li>
+                        </ul>
+                        <ul>
+                            <li>CSS 애니메이션 효과</li>
+                        </ul>
+                        <ul>
+                            <li>CSS transform</li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <span class="skill-title">Front-end</span>
-                            <div class="skill">
-                                <h4>Html</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>웹 페이지 기본 구조와 작성 방법</li>        
-                                    </ul>
-                                    <ul>
-                                        <li>HTML5 기본 태그</li>
-                                    </ul>
-                                    <ul>
-                                        <li>HTML5 입력 양식 태그와 구조화 태그</li>
-                                    </ul>
-                                </div>
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>CSS</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                            </div><!-- /.skill -->
-                            <div class = "line-skill">
-                                <ul>
-                                    <li>CSS의 기본 문법</li>        
-                                </ul>
-                                <ul>
-                                    <li>CSS 속성</li>
-                                </ul>
-                                <ul>
-                                    <li>CSS 박스 모델</li>
-                                </ul>
-                                <ul>
-                                    <li>그리드</li>
-                                </ul>
-                                <ul>
-                                    <li>CSS 선택자의 기본</li>
-                                </ul>
-                                <ul>
-                                    <li>CSS 애니메이션 효과</li>
-                                </ul>
-                                <ul>
-                                    <li>CSS transform</li>
-                                </ul>
-                            </div>
-                            <div class="skill">
-                                <h4>Javascript/JQuery</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                            </div><!-- /.skill -->
-                           
-                            <div class = "line-skill">
-                                <ul>
-                                    <li>자바스크립트 기본 용어와 출력 방법</li>
-                                </ul>
-                                <ul>
-                                    <li>자료형과 변수</li>
-                                </ul>
-                                <ul>
-                                    <li>조건문과 반복문</li>
-                                </ul>
-                                <ul>
-                                    <li>함수</li>
-                                </ul>
-                                <ul>
-                                    <li>객체</li>
-                                </ul>
-                                <ul>
-                                    <li>문서 객체 조작</li>        
-                                </ul>
-                                <ul>
-                                    <li>이벤트</li>
-                                </ul>
-                                <ul>
-                                    <li>시각 효과</li>
-                                </ul>
-                               
-                            </div> 
-                            <img style="display: block; margin-left: 10px;margin-top: 10px;" src="./images/front-end.png"> 
+                    <div class="skill">
+                        <h4>- Javascript/JQuery <img style="display:inline-block;padding-left: 20px;"
+                                src="./images/front3.png"></h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+
+                    <div class="line-skill">
+                        <ul>
+                            <li>자바스크립트 기본 용어와 출력 방법</li>
+                        </ul>
+                        <ul>
+                            <li>자료형과 변수</li>
+                        </ul>
+                        <ul>
+                            <li>조건문과 반복문</li>
+                        </ul>
+                        <ul>
+                            <li>함수</li>
+                        </ul>
+                        <ul>
+                            <li>객체</li>
+                        </ul>
+                        <ul>
+                            <li>문서 객체 조작</li>
+                        </ul>
+                        <ul>
+                            <li>이벤트</li>
+                        </ul>
+                        <ul>
+                            <li>시각 효과</li>
+                        </ul>
+
+                    </div>
+                    <span class="skill-title" style="padding-top: 20px;">기타</span>
+                    <div class="skill">
+                        <h4>- Matlab <img style="display:inline-block;padding-left: 20px;" src="./images/matlab.png">
+                        </h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li>확률 계산</li>
+                                <li>그래프</li>
+                                <li>행렬, 역행렬 이용</li>
+                                <li>조건문과 반복문 </li>
+                                <li>함수</li>
+                                <li style="line-height: 110%;">ECC 알고리즘 암복호화 구현을 <br>했습니다.</li>
+                                <li style="line-height: 110%;">soft-decision과 hard-decision을 <br>구현을 해보았습니다.</li>
+                                <li>16-QAM 구현</li>
+                                <li style="line-height: 110%;">BPSK 변조기를 거친 부호화화 <br>비부호화 결과 비교하는 그래프를<br> 구현해보았습니다.
+                                </li>
+                            </ul>
                         </div>
-                        
-                        <div class="col-md-4">
-                            <span class="skill-title">Back-end</span>
-                            <div class="skill">
-                                <h4>Java</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>변수</li>
-                                    </ul>
-                                    <ul>
-                                        <li>연산자</li>
-                                    </ul>
-                                    <ul>
-                                        <li>조건문과 반복문</li>
-                                    </ul>
-                                    <ul>
-                                        <li>배열</li>
-                                    </ul>
-                                    <ul>
-                                        <li>객체지향 프로그래밍</li>
-                                    </ul>
-                                    <ul>
-                                        <li>예외처리</li>        
-                                    </ul>
-                                    <ul>
-                                        <li>java.lang패키지와 유용한 클래스</li>
-                                    </ul>
-                                    <ul>
-                                        <li>날짜와 시간 & 형식화</li>
-                                    </ul>
-                                    <ul>
-                                        <li>컬렉션 프레임웍</li>
-                                    </ul>
-                                    <ul>
-                                        <li>지네릭스, 열거형</li>
-                                    </ul>
-                                    <ul>
-                                        <li>람다와 스트림</li>
-                                    </ul>
-                                    <ul>
-                                        <li>입출력(I/O)</li>
-                                    </ul>
-                                </div> 
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>C</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>변수와 연산자</li>
-                                    </ul>
-                                    <ul>
-                                        <li>데이터 표현방식의 이해</li>
-                                    </ul>
-                                    <ul>
-                                        <li>상수와 기본 자료형</li>
-                                    </ul>
-                                    <ul>
-                                        <li>printf 함수와 scanf 함수</li>
-                                    </ul>
-                                    <ul>
-                                        <li>반복문 & 조건</li>
-                                    </ul>
-                                    <ul>
-                                        <li>함수</li>        
-                                    </ul>
-                                    <ul>
-                                        <li>포인터와 배열</li>
-                                    </ul>
-                                    <ul>
-                                        <li>구조체</li>
-                                    </ul>
-                                    <ul>
-                                        <li>문자와 문자열 관련 함수</li>
-                                    </ul>
-                                    <ul>
-                                        <li>파일 입출력</li>
-                                    </ul>
-                                </div> 
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>C++</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>클래스의 기본</li>
-                                    </ul>
-                                    <ul>
-                                        <li>클래스의 완성</li>
-                                    </ul>
-                                    <ul>
-                                        <li>복사 생성자</li>
-                                    </ul>
-                                    <ul>
-                                        <li>friend, static, const</li>
-                                    </ul>
-                                    <ul>
-                                        <li>상속과 다향성</li>
-                                    </ul>
-                                    <ul>
-                                        <li>다중상속</li>        
-                                    </ul>
-                                    <ul>
-                                        <li>연산자 오버로딩</li>
-                                    </ul>
-                                    <ul>
-                                        <li>예외처리</li>
-                                    </ul>
-                                </div> 
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>Pthyon</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>RSA 전자서명 구현을 했습니다.</li>
-                                        <li style="line-height: 110%;">Gamma correction과 threshold 를 위한 function을 구현했습니다.</li>
-                                        <li>기초 자료형</li>
-                                        <li>제어문</li>
-                                        <li>함수</li>
-                                        <li>클래스, 모듈, 패키지, 예외 처리</li>
-                                    </ul>
-                                  
-                                </div> 
-                            </div><!-- /.skill -->
-                            <img style="display: block; margin-left: 5px;margin-top: 20px;" src="./images/back-end.png">
+                    </div><!-- /.skill -->
+                </div>
+
+                <div class="col-md-4">
+                    <span class="skill-title">Back-end</span>
+                    <div class="skill">
+                        <h4>- Java <img style="display:inline-block;padding-left: 20px;" src="./images/back1.png">
+                        </h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li>변수</li>
+                            </ul>
+                            <ul>
+                                <li>연산자</li>
+                            </ul>
+                            <ul>
+                                <li>조건문과 반복문</li>
+                            </ul>
+                            <ul>
+                                <li>배열</li>
+                            </ul>
+                            <ul>
+                                <li>객체지향 프로그래밍</li>
+                            </ul>
+                            <ul>
+                                <li>예외처리</li>
+                            </ul>
+                            <ul>
+                                <li>java.lang패키지와 유용한 클래스</li>
+                            </ul>
+                            <ul>
+                                <li>날짜와 시간 & 형식화</li>
+                            </ul>
+                            <ul>
+                                <li>컬렉션 프레임웍</li>
+                            </ul>
+                            <ul>
+                                <li>지네릭스, 열거형</li>
+                            </ul>
+                            <ul>
+                                <li>람다와 스트림</li>
+                            </ul>
+                            <ul>
+                                <li>입출력(I/O)</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4">
-                            <span class="skill-title">FrameWork</span>
-                            <div class="skill">
-                                <h4>Bootstrap</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>폼</li>
-                                        <li style="line-height: 110%;">버튼 그룹, 버튼 드롭다운</li>
-                                        <li>Navbar</li>
-                                        <li>Badges, Labels</li>
-                                        <li>Progress bars</li>
-                                        <li>Alerts</li>
-                                        <li>모달</li>
-                                        <li>차트</li>
-                                        <li>테이블</li>
-                                    </ul>
-                                </div> 
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>Android</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="60"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>네트워킹</li>
-                                        <li style="line-height: 110%;">소켓 사용</li>
-                                        <li>TCP 통신으로 RSA 암호화를 하여 채팅 프로그래밍을 만들었습니다.</li>
-                                    </ul>
-                                </div> 
-                            </div><!-- /.skill -->
-                            <span>기타</span>
-                            <div class="skill">
-                                <h4>Oracle</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>Oracle을 이용한 스키마 구축</li>
-                                        <li style="line-height: 110%;">요구사항 분석과 시스템 설계 그리고 모델링</li>
-                                        <li>인덱스, 뷰, 트리거, 프로시저</li>
-                                        <li>백업과 복원</li>
-                                        <li>SELECT문</li>
-                                        <li>데이터 변경을 위한 SQL문</li>
-                                        <li>조인</li>
-                                        <li>Oracle의 데이터 형식</li>
-                                        <li>PL/SQL 프로그래밍</li>
-                                        <li>함수,커서,rownum</li>
-                                    </ul>
-                                </div> 
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>Matlab</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div>
-                                    <!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                                <div class = "line-skill">
-                                    <ul>
-                                        <li>확률 계산</li>
-                                        <li style="line-height: 110%;">그래프</li>
-                                        <li>행렬, 역행렬 이용</li>
-                                        <li>조건문과 반복문 </li>
-                                        <li>함수</li>
-                                        <li>ECC 알고리즘 암복호화 구현을 했습니다.</li>
-                                        <li>soft-decision과 hard-decision을 구현을 해보았습니다.</li>
-                                        <li>16-QAM 구현</li>
-                                        <li>BPSK 변조기를 거친 부호화화 비부호화 결과 비교하는 그래프를 구현해보았습니다.</li>
-                                    </ul>
-                                </div> 
-                            </div><!-- /.skill -->
-                            <img style="display: block; margin-left: 20px;margin-top: 60px;" src="./images/etc.png">
+                    </div><!-- /.skill -->
+                    <div style="margin-top: 10px;" class="skill">
+                        <h4>- C <img style="display:inline-block;padding-left: 20px;" src="./images/back2.png"></h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li>변수와 연산자</li>
+                            </ul>
+                            <ul>
+                                <li>데이터 표현방식의 이해</li>
+                            </ul>
+                            <ul>
+                                <li>상수와 기본 자료형</li>
+                            </ul>
+                            <ul>
+                                <li>printf 함수와 scanf 함수</li>
+                            </ul>
+                            <ul>
+                                <li>반복문 & 조건</li>
+                            </ul>
+                            <ul>
+                                <li>함수</li>
+                            </ul>
+                            <ul>
+                                <li>포인터와 배열</li>
+                            </ul>
+                            <ul>
+                                <li>구조체</li>
+                            </ul>
+                            <ul>
+                                <li>문자와 문자열 관련 함수</li>
+                            </ul>
+                            <ul>
+                                <li>파일 입출력</li>
+                            </ul>
                         </div>
+                    </div><!-- /.skill -->
+                    <div style="margin-top: 10px;" class="skill">
+                        <h4>- C++ <img style="display:inline-block;padding-left: 20px;" src="./images/back3.png"></h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li>클래스의 기본</li>
+                            </ul>
+                            <ul>
+                                <li>클래스의 완성</li>
+                            </ul>
+                            <ul>
+                                <li>복사 생성자</li>
+                            </ul>
+                            <ul>
+                                <li>friend, static, const</li>
+                            </ul>
+                            <ul>
+                                <li>상속과 다향성</li>
+                            </ul>
+                            <ul>
+                                <li>다중상속</li>
+                            </ul>
+                            <ul>
+                                <li>연산자 오버로딩</li>
+                            </ul>
+                            <ul>
+                                <li>예외처리</li>
+                            </ul>
+                        </div>
+                    </div><!-- /.skill -->
+                    <div style="margin-top: -10px;" class="skill">
+                        <h4>- Pthyon <img style="display:inline-block;padding-left: 20px;" src="./images/back4.png">
+                        </h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li style="line-height: 110%;">RSA 전자서명 구현을 해보았<br>습니다.</li>
+                                <li style="line-height: 110%;">Gamma correction과 threshold<br>를 위한 function을 구현했습니다.
+                                </li>
+                                <li>기초 자료형</li>
+                                <li>제어문</li>
+                                <li>함수</li>
+                                <li>클래스, 모듈, 패키지, 예외 처리</li>
+                            </ul>
+
+                        </div>
+                    </div><!-- /.skill -->
+                </div>
+
+                <div class="col-md-4">
+                    <span class="skill-title">FrameWork</span>
+                    <div class="skill">
+                        <h4>- Bootstrap <img style="display:inline-block;padding-left: 20px;"
+                                src="./images/bootstrap.png"></h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li>폼</li>
+                                <li style="line-height: 110%;">버튼 그룹, 버튼 드롭다운</li>
+                                <li>Navbar</li>
+                                <li>Badges, Labels</li>
+                                <li>Progress bars</li>
+                                <li>Alerts</li>
+                                <li>모달</li>
+                                <li>차트</li>
+                                <li>테이블</li>
+                            </ul>
+                        </div>
+                    </div><!-- /.skill -->
+                    <div style="margin-top: 10px;" class="skill">
+                        <h4>- Android <img style="display:inline-block;padding-left: 20px;" src="./images/android.png">
+                        </h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="60"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li>네트워킹</li>
+                                <li>소켓 사용</li>
+                                <li style="line-height: 110%;">TCP 통신으로 RSA 암호화를 <br>하여 채팅 프로그래밍을 만들<br>었습니다.</li>
+                            </ul>
+                        </div>
+                    </div><!-- /.skill -->
+                    <div class="skill">
+                        <span class="skill-title" style="padding-top: 20px;">DataBase</span>
+                        <h4>- Oracle <img style="display:inline-block;padding-left: 20px;" src="./images/oracle.png">
+                        </h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
+                            <!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                        <div class="line-skill">
+                            <ul>
+                                <li>Oracle을 이용한 스키마 구축</li>
+                                <li style="line-height: 110%;">요구사항 분석과 시스템 설계 <br>그리고 모델링</li>
+                                <li>인덱스, 뷰, 트리거, 프로시저</li>
+                                <li>백업과 복원</li>
+                                <li>SELECT문</li>
+                                <li>데이터 변경을 위한 SQL문</li>
+                                <li>조인</li>
+                                <li>Oracle의 데이터 형식</li>
+                                <li>PL/SQL 프로그래밍</li>
+                                <li>함수, 커서, rownum</li>
+                            </ul>
+                        </div>
+                    </div><!-- /.skill -->
+                </div>
+            </div>
+
+            <!-- </div> -->
+
+        </section><!-- /.secton-skills -->
+
+
+        <section style="margin-top:-270px;margin-left: -100px;" id="service"
+            class="site-section section-services overlay text-center">
+            <div class="container" style="height: 450px;">
+                <div class="row" style="margin-top: -80px;">
+                    <div class="col-md-12">
+                        <h3 style="margin-left: 150px;">What i do</h3>
+                        <img style="margin-left: -30px;" src="../images/lines.svg" class="img-lines" alt="lines">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="./images/do1.PNG" alt="solution">
+                            <h4>Solution</h4>
+                            <p>코딩을 하다가 결과물이 제대로<br> 나오지 않을때 좌절하기 보다는 왜 안되는지 이유를 찾으며 솔루션을 스스로 찾아낼 수 있습니다.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="./images/do2.PNG" alt="self developement">
+                            <h4>Self developement</h4>
+                            <p>IT는 끊임 없이 빠르게 변화하고<br> 새로운 언어가 새로 생겨납니다. 저는 이에 발맞추어 자기개발을 꾸준히 하고 있습니다.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="./images/do3.PNG" alt="Coding">
+                            <h4 style="padding-top: 15px;">Cooperation</h4>
+                            <p>항상 에러가 나지 않았는지 꼼꼼히<br> 체크를 하며 효율적인 코드를 짜도록 노력합니다. 또한 모르는 문제가 생겼을 시에 다른 동료들에게 물어보며 협업하는
+                                능력이 있습니다.</p>
+                        </div><!-- /.service -->
                     </div>
                 </div>
-            </section><!-- /.secton-skills -->
-        </div>
-    
-        <div class="hideme">
-            <section style="margin-top:-250px;" id="service" class="site-section section-services overlay text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 style="margin-left: 150px;">What i do</h3>
-                            <img style="margin-left: -30px;" src="../images/lines.svg" class="img-lines" alt="lines">
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service">
-                                <img src="./images/do1.PNG" alt="solution">
-                                <h4>Solution</h4>
-                                <p>코딩을 하다가 결과물이 제대로<br> 나오지 않을때 좌절하기 보다는 왜 안되는지 이유를 찾으며 솔루션을 스스로 찾아낼 수 있습니다.</p>
-                            </div><!-- /.service -->
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service">
-                                <img src="./images/do2.PNG" alt="self developement">
-                                <h4>Self developement</h4>
-                                <p>IT는 끊임 없이 빠르게 변화하고<br> 새로운 언어가 새로 생겨납니다. 저는 이에 발맞추어 자기개발을 꾸준히 하고 있습니다.</p>
-                            </div><!-- /.service -->
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service">
-                                <img src="./images/do3.PNG" alt="Coding">
-                                <h4 style="padding-top: 15px;">Cooperation</h4>
-                                <p>항상 에러가 나지 않았는지 꼼꼼히<br> 체크를 하며 효율적인 코드를 짜도록 노력합니다. 또한 모르는 문제가 생겼을 시에 다른 동료들에게 물어보며 협업하는
-                                    능력이 있습니다.</p>
-                            </div><!-- /.service -->
-                        </div>
+            </div>
+        </section><!-- /.secton-services -->
+
+
+
+        <section id="portfolio" class="site-section section-portfolio" style="margin-top: -60px;margin-left: -100px;">
+            <div class="container">
+                <div class="text-center">
+                    <h3 style="padding-left: 180px;">My recent Works</h3>
+                    <img style="margin-left:10px" src="./images/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="./images/portfolio-1.jpg" class="img-res" alt="포트로리오">
+                            <div class="portfolio-item-info">
+                                <h4>Ssangyong Education Center</h4>
+                                <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a> -->
+                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="./images/portfolio-2.jpg" class="img-res" alt="포트로리오">
+                            <div class="portfolio-item-info">
+                                <h4>Subway</h4>
+                                <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a> -->
+                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="./images/portfolio-3.jpg" class="img-res" alt="포트로리오">
+                            <div class="portfolio-item-info">
+                                <h4>Member Management System</h4>
+                                <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a> -->
+                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="./images/portfolio-4.jpg" class="img-res" alt="포트로리오">
+                            <div class="portfolio-item-info">
+                                <h4>ECC algorithm</h4>
+                                <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span class="glyphicon glyphicon-eye-open"></span></a> -->
+                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="./images/portfolio-5.jpg" class="img-res" alt="포트로리오">
+                            <div class="portfolio-item-info">
+                                <h4>TCP Chat</h4>
+                                <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span class="glyphicon glyphicon-eye-open"></span></a> -->
+                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="./images/portfolio-6.jpg" class="img-res" alt="포트로리오">
+                            <div class="portfolio-item-info">
+                                <h4>At-Ticket</h4>
+                                <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span class="glyphicon glyphicon-eye-open"></span></a> -->
+                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
                     </div>
                 </div>
-            </section><!-- /.secton-services -->
-        </div>
-    
-        <div class="hideme">
-            <section id="portfolio" class="site-section section-portfolio">
-                <div class="container">
-                    <div class="text-center">
-                        <h3 style="padding-left: 150px;">My recent Works</h3>
-                        <img style="margin-left:-30px" src="./images/lines.svg" class="img-lines" alt="lines">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-6">
-                            <div class="portfolio-item">
-                                <img src="./images/portfolio-1.jpg" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Ssangyong Education Center</h4>
-                                    <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a> -->
-                                    <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="portfolio-item">
-                                <img src="./images/portfolio-2.jpg" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Subway</h4>
-                                    <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a> -->
-                                    <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="portfolio-item">
-                                <img src="./images/portfolio-3.jpg" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Member Management System</h4>
-                                    <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a> -->
-                                    <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="portfolio-item">
-                                <img src="./images/portfolio-4.jpg" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>ECC algorithm</h4>
-                                    <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span class="glyphicon glyphicon-eye-open"></span></a> -->
-                                    <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="portfolio-item">
-                                <img src="./images/portfolio-5.jpg" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>TCP Chat</h4>
-                                    <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span class="glyphicon glyphicon-eye-open"></span></a> -->
-                                    <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="portfolio-item">
-                                <img src="./images/portfolio-6.jpg" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>At-Ticket</h4>
-                                    <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span class="glyphicon glyphicon-eye-open"></span></a> -->
-                                    <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
+            </div>
+        </section><!-- /.secton-portfolio -->
+
+
+
+        <section style="margin-top: -50px; margin-left: -150px; width: 2000px;"
+            class="site-section section-counters text-center">
+            <div style="margin-left:750px;" class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
+                        <h4>Seconds on this site!<br>What are you waiting for?</h4>
                     </div>
                 </div>
-            </section><!-- /.secton-portfolio -->
-        </div>
-    
-        <div class="hideme">
-            <section class="site-section section-counters text-center">
-                <div class="container">
-                    <div class="row">
-                        <div style="margin-left: 380px;" class="col-sm-4 col-xs-12">
-                            <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
-                            <h4>Seconds on this site!<br>What are you waiting for?</h4>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- /.section-counters -->
-        </div>
-    
-        <div class="hideme">
-            <section id="contact" class="site-section section-form text-center">
-                <div class="container">
-    
-                    <h3 style="padding-left: 100px;margin-top: -90px;">Contact Me</h3>
-                    <img style="margin-left:-90px" src="./images/lines.svg" class="img-lines" alt="lines">
+            </div>
+        </section><!-- /.section-counters -->
+
+        <section id="contact" class="site-section section-form text-center">
+            <div class="container">
+                <h3 style="margin-top: -80px;">Contact Me</h3>
+                <img style="margin-left:-170px" src="./images/lines.svg" class="img-lines" alt="lines">
+                <div style="margin-left: -700px;">
                     <div class="contact-content"><span
-                            style="font-size: 2em; padding-left: 420px;padding-right: 20px; position: relative;top: 7px;"
-                            class="glyphicon glyphicon-envelope"></span><span>ithansiyeon@nate.com</span></div>
+                            style="font-size: 2em; padding-left: 380px;padding-right: 20px; position: relative;top: 7px;"
+                            class="glyphicon glyphicon-envelope"></span><span
+                            style="font-weight: bold;font-size: 1.5em;">:</span><span> ithansiyeon@nate.com</span></div>
                     <div class="contact-content"><span
-                            style="font-weight: bold;font-size: 1.5em;padding-left: 650px;">Github :
+                            style="font-weight: bold;font-size: 1.5em;padding-left: 600px;">Github :
                         </span><span>https://github.com/ithansiyeon?tab=repositories</span></div>
-                    <div class="contact-content"><span style="font-weight: bold;font-size: 1.5em;padding-left: 650px;"><img
+                    <div class="contact-content"><span
+                            style="font-weight: bold;font-size: 1.5em;padding-left: 600px;"><img
                                 style="width: 100px; margin-left: -190px;" src="./images/talk.png">카카오톡 ID :
                         </span>hansi97<span></span></div>
                 </div>
-            </section><!-- /.section-form -->
-        </div>
+            </div>
+        </section><!-- /.section-form -->
     </div>
 
-    <footer id="colophon" class="site-footer">
+
+    <footer style="margin-top: -80px;" id="colophon" class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-xs-12"></div>
-                <a href="https://github.com/ithansiyeon?tab=repositories"><i class="fa fa-github-alt"
-                        style="position: relative; left:-500px;top:40px;font-size:48px;margin-left:100px;color:white"></i></a>
+                <a href="https://github.com/ithansiyeon?tab=repositories" target="_blank"><i id = "git" class="fa fa-github-alt"
+                        style="position: relative; left:-500px;top:30px;font-size:48px;margin-left:100px;color:white"></i></a>
             </div>
-            <div style="margin-left: 350px;" class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+            <div style="margin-left: 350px;margin-top: -20px;"
+                class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3">
                 <p class="copyright"> Copyright &copy; 2020. All Rights Reserved</p>
             </div>
             <div class="col-sm-4 col-xs-3">
-                <div style="width: 50px; margin-left: 350px;" class="text-right page-scroll">
+                <div style="width: 50px; margin-left: 350px;margin-top: -20px;height: 60px;"
+                    class="text-right page-scroll">
                     <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
                 </div>
             </div>
@@ -859,7 +910,7 @@
         };
 
         $(window).scroll(function () {
-           
+
             //메뉴가 시야에서 사라지는 순간 -> 메뉴를 붙박이로 만들기
             if ($(window).scrollTop() > $(".site-header").position().top) {
                 // alert();
@@ -879,7 +930,7 @@
                 });
             }
         });
-        
+
     </script>
 </body>
 
