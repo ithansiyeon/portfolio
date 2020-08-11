@@ -34,9 +34,13 @@
 <link href="./css/responsive.css" rel="stylesheet">
 
 <link rel="icon" type="image/png" sizes="800x800" href="./images/logo1.png">
-<script src="./js/jquery.fade-in.js"></script>
+
 
 <style>
+    body{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
     html,
     body {
         margin: 0;
@@ -206,6 +210,38 @@
         opacity: 0.5;
     }
 
+    .job-title{
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+
+    .skill-title {
+        margin-left:65px;
+        margin-bottom:20px;
+    }
+
+    .line{
+        line-height: 25px;
+    }
+
+    /* .stie-header {
+
+        position: fixed;
+
+        width: 100%;
+
+        z-index:1000;
+
+        -webkit-transition: .25s;
+
+        -moz-transition: .25s;
+
+        -o-transition: .25s;
+
+        transition: .25s;
+
+    } */
+
 </style>
 
 <body>
@@ -216,7 +252,7 @@
             <div class="container">
                 <div class="navbar-header page-scroll">
 
-                    <!-- <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse"
+                   <!-- <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse"
                         aria-expanded="false">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -232,7 +268,7 @@
 
                     <ul style="position: relative; left: 250px; top: 30px;" class="nav navbar-nav navbar-right">
 
-                        <li class="page-scroll"><a href="#hero">Home</a></li>
+                        <li id = "hh" class="page-scroll"><a href="#hero">Home</a></li>
                         <li class="page-scroll"><a href="#about">About</a></li>
                         <li class="page-scroll"><a href="#education">Education</a></li>
                         <li class="page-scroll"><a href="#skills">Skills</a></li>
@@ -253,11 +289,10 @@
     <div id="hero" class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="padding-top: 550px;margin-left: -300px; z-index: 1;">
-                    <h1>Hello!<br>I'm Si Yeon Han.</h1>
+                <div class="col-md-6" style="padding-top: 550px;margin-left: -300px; z-index:1;">
+                    <h1 class = "intro">Hello!<br>I'm Si Yeon Han.</h1>
                     <div class="page-scroll">
-                        <p class="job-title">Web developer</p>
-                        <div class="clearfix visible-xxs"></div>
+                        <div style="margin-bottom: 70px;" class = "job-title">Web developer</div>
                         <a href="#portfolio" class="btn btn-border" id="explorebtn">Explore more</a>
                     </div>
                 </div>
@@ -282,19 +317,18 @@
                                 <p>실패를 두려워 하지 않는 개발자, 성장을 하는 개발자, 끈기 있는 개발자</p>
                                 <div style="margin-top: -30px;">
                                 <span style="margin-top: -30px;" class="subtitle"><img class = "img1" src = ./images/상장.png>Certificates & Languages</span><span
-                                    style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[취득일]</span>
-                                <ul style="margin-left: 80px;margin-top: -20px;">
-                                    <li>정보처리기사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        [2019-11-22]</li>
-                                    <li>네트워크 관리사 2급 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-05-21]</li>
-                                    <li>컴퓨터활용능력 2급 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-02-22]</li>
-                                    <li>TOEIC(810)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        [2019-09-07]</li>
-                                    <li>OPIC(IM2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        [2019-03-16]</li>
+                                    style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[취득일]</span>
+                                <ul style="margin-left: 80px;margin-top: -15px;">
+                                    <li class = "line">정보처리기사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    [2019-11-22]</li>
+                                    <li class = "line">네트워크 관리사 2급&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-05-21]</li>
+                                    <li class = "line">컴퓨터활용능력 1급(필기);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-09-16]</li>
+                                    <li class = "line">컴퓨터활용능력 2급&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-02-22]</li>
+                                    <li class = "line">TOEIC(810)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-09-07]</li>
+                                    <li class = "line">OPIC(IM2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2019-03-16]</li>
                                 </ul>
                                 <span class="subtitle"><img class = "img1" src = "./images/경험.png">Experience</span>
-                                <p style="padding-left: 80px; margin-top: -20px;">가톨릭대학교 통신 네트워크 연구실 : 1년</p>
+                                <p style="padding-left: 80px; margin-top: -15px;">가톨릭대학교 통신 네트워크 연구실 : 1년</p>
                             </div>
                             <div style="margin-top: 100px;margin-left: 60px;">
                                 <a href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf"
@@ -419,7 +453,7 @@
                 </div>
                 <!-- <div class="row"> -->
                 <div class="col-md-4">
-                    <span class="skill-title">Front-end</span>
+                    <div  class="skill-title"><span>Front-end</span></div>
                     <div class="skill">
                         <h4>- Html <img style="display:inline-block;padding-left: 10px;" src="./images/front1.png">
                         </h4>
@@ -472,7 +506,7 @@
                         </ul>
                     </div>
                     <div class="skill">
-                        <h4>- Javascript/JQuery <img style="display:inline-block;padding-left: 20px;"
+                        <h4>- Javascript/JQuery<img style="display:inline-block;padding-left: 20px;"
                                 src="./images/front3.png"></h4>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
@@ -507,9 +541,9 @@
                         </ul>
 
                     </div>
-                    <span class="skill-title" style="padding-top: 20px;">기타</span>
+                    <div class="skill-title" style="margin-bottom:-10px;margin-top:30px;"><span style="margin-left: 25px;">기타</span></div>
                     <div class="skill">
-                        <h4>- Matlab <img style="display:inline-block;padding-left: 20px;" src="./images/matlab.png">
+                        <h4>- Matlab<img style="display:inline-block;padding-left: 20px;" src="./images/matlab.png">
                         </h4>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div>
@@ -531,9 +565,9 @@
                         </div>
                     </div><!-- /.skill -->
                 </div>
-
-                <div class="col-md-4">
-                    <span class="skill-title">Back-end</span>
+                <div style="border-right: 1px dashed gray;width: 1px; height: 1300px; margin-left: -30px; float: left;"></div>
+                <div style="float: left;" class="col-md-4">
+                    <div class = "skill-title"><span>Back-end</span></div>
                     <div class="skill">
                         <h4>- Java <img style="display:inline-block;padding-left: 20px;" src="./images/back1.png">
                         </h4>
@@ -578,6 +612,9 @@
                             <ul>
                                 <li>입출력(I/O)</li>
                             </ul>
+                            <ul>
+                                <li style="line-height: 110%;">JDBC를 사용하여 데이터베이스에<br> 접속할 수 있습니다.</li>
+                            </ul>
                         </div>
                     </div><!-- /.skill -->
                     <div style="margin-top: 10px;" class="skill">
@@ -620,7 +657,7 @@
                         </div>
                     </div><!-- /.skill -->
                     <div style="margin-top: 10px;" class="skill">
-                        <h4>- C++ <img style="display:inline-block;padding-left: 20px;" src="./images/back3.png"></h4>
+                        <h4>- C++<img style="display:inline-block;padding-left: 20px;" src="./images/back3.png"></h4>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
                             <!-- /.progress-bar -->
@@ -653,7 +690,7 @@
                         </div>
                     </div><!-- /.skill -->
                     <div style="margin-top: -10px;" class="skill">
-                        <h4>- Pthyon <img style="display:inline-block;padding-left: 20px;" src="./images/back4.png">
+                        <h4>- Pthyon<img style="display:inline-block;padding-left: 20px;" src="./images/back4.png">
                         </h4>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div>
@@ -673,9 +710,9 @@
                         </div>
                     </div><!-- /.skill -->
                 </div>
-
+                <div style="border-right: 1px dashed gray;width: 1px; height: 1300px; margin-left: -30px; float: left;"></div>
                 <div class="col-md-4">
-                    <span class="skill-title">FrameWork</span>
+                    <div class="skill-title"><span>FrameWork</span></div>
                     <div class="skill">
                         <h4>- Bootstrap <img style="display:inline-block;padding-left: 20px;"
                                 src="./images/bootstrap.png"></h4>
@@ -713,7 +750,7 @@
                         </div>
                     </div><!-- /.skill -->
                     <div class="skill">
-                        <span class="skill-title" style="padding-top: 20px;">DataBase</span>
+                        <div class="skill-title" style="margin-top: -30px;"><span style="padding-top: 20px;">DataBase</span></div>
                         <h4>- Oracle <img style="display:inline-block;padding-left: 20px;" src="./images/oracle.png">
                         </h4>
                         <div class="progress">
@@ -912,6 +949,8 @@
         // box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);"
         window.onload = function () {
             $("#hero").css("height", window.screen.height);
+            $(".page-scroll").removeClass("active"); 
+            $("#hh").addClass("active");
         };
 
         $(window).scroll(function () {
@@ -927,6 +966,7 @@
                     boxShadow: "0px 0px 20px 6px rgba(0,0,0,0.2)",
                     height: "80px",
                     "background-color": "white"
+                    
                 });
             } else if ($(window).scrollTop() == 0) {
                 $(".site-header").css({
