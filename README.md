@@ -57,9 +57,9 @@ Git Pages와 HTML5, CSS3, JavaScript를 이용한 싱글페이지 포트폴리�
         <th>Skills/th>
     </tr>
     <tr>
-        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90415223-c2e5d500-e0eb-11ea-8680-ac3b947616de.png"></td>
-        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416021-e1989b80-e0ec-11ea-93a5-7c217038deca.png"></td>
-        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416100-ff660080-e0ec-11ea-968f-2f6a64da2bf0.png"></td>
+        <td><img width="266" hight="100" src="https://user-images.githubusercontent.com/66079830/90415223-c2e5d500-e0eb-11ea-8680-ac3b947616de.png"></td>
+        <td><img width="266" hight="100" src="https://user-images.githubusercontent.com/66079830/90416021-e1989b80-e0ec-11ea-93a5-7c217038deca.png"></td>
+        <td><img width="266" hight="100" src="https://user-images.githubusercontent.com/66079830/90416100-ff660080-e0ec-11ea-968f-2f6a64da2bf0.png"></td>
     </tr>
         <tr>
         <th>What I do?</th>
@@ -67,9 +67,9 @@ Git Pages와 HTML5, CSS3, JavaScript를 이용한 싱글페이지 포트폴리�
         <th>Contact</th>
     </tr>
     <tr>
-        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416136-0bea5900-e0ed-11ea-9f9a-a5a2d0c6e3d7.png"></td>
-        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416179-1ad10b80-e0ed-11ea-9c19-30b457f8b77e.png"></td>
-        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416260-363c1680-e0ed-11ea-9894-97f8792e7c44.png"></td>
+        <td><img width="266" hight="100" src="https://user-images.githubusercontent.com/66079830/90416136-0bea5900-e0ed-11ea-9f9a-a5a2d0c6e3d7.png"></td>
+        <td><img width="266" hight="100" src="https://user-images.githubusercontent.com/66079830/90416179-1ad10b80-e0ed-11ea-9c19-30b457f8b77e.png"></td>
+        <td><img width="266" hight="100" src="https://user-images.githubusercontent.com/66079830/90416260-363c1680-e0ed-11ea-9894-97f8792e7c44.png"></td>
     </tr>
 </table>
 
