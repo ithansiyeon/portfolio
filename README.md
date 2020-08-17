@@ -53,8 +53,8 @@ Git Pages와 HTML5, CSS3, JavaScript를 이용한 싱글페이지 포트폴리�
 <table>
     <tr>
         <th>About</th>
-        <th>Eduction<</th>
-        <th>Skills/th>
+        <th>Eduction</th>
+        <th>Skills</th>
     </tr>
     <tr>
         <td><img width="266" hight="100" src="https://user-images.githubusercontent.com/66079830/90415223-c2e5d500-e0eb-11ea-8680-ac3b947616de.png"></td>
