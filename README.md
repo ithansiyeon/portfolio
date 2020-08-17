@@ -1,37 +1,75 @@
-## Welcome to GitHub Pages
+# SIYEON HAN's Portfolio
 
-You can use the [editor on GitHub](https://github.com/ithansiyeon/portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**한시연의 포트폴리오 | [▶ Preview](http://127.0.0.1:5501/portfolio.html)** 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![SIYEON HAN's Portfolio](https://user-images.githubusercontent.com/66079830/90414723-1ad00c00-e0eb-11ea-9e81-0cc4a61bc5f9.png)
 
-### Markdown
+### 👋 Introduction
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<table>
+    <tr>
+        <th>프로젝트명</th>
+        <th>Portfolio</th>
+        <th>개발 기간</th>
+        <th>2020.07.22. ~ 2020.08.07.</th>
+    </tr>
+    <tr>
+        <th>프로젝트 성격</th>
+        <th>포트폴리오 프로젝트</th>
+        <th>개발 인원</th>
+        <th>개인 / 1명</th>
+    </tr>
+    <tr>
+        <th>프로젝트 개요</th>
+        <th>싱글페이지 포트폴리오 웹 사이트</th>
+        <th>개발 환경</th>
+        <th>Windows10</th>
+    </tr>
+    <tr>
+        <th colspan="4">사용한 Skill 또는 지식</th>
+    </tr>  
+    <tr>
+        <th>개발언어</th>
+        <th colspan="3">HTML5, JavaScript, CSS3</th>
+    </tr>
+    <tr>
+        <th>형상관리</th>
+        <th colspan="3">Github, Git Bash, Source Tree</th>
+    </tr>
+    <tr>
+        <th>개발도구</th>
+        <th colspan="3">Visual Studio Code, Github Pages, Balsamiq</th>
+    </tr>
+    <tr>
+        <th>사용기술</th>
+        <th colspan="3">jQuery, Bootstrap, Media Query</th>
+    </tr>
+</table>
 
-```markdown
-Syntax highlighted code block
+### 📷 Appearance
 
-# Header 1
-## Header 2
-### Header 3
+Git Pages와 HTML5, CSS3, JavaScript를 이용한 싱글페이지 포트폴리오 정적 웹 사이트입니다.
 
-- Bulleted
-- List
+<table>
+    <tr>
+        <th>About</th>
+        <th>Eduction<</th>
+        <th>Skills/th>
+    </tr>
+    <tr>
+        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90415223-c2e5d500-e0eb-11ea-8680-ac3b947616de.png"></td>
+        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416021-e1989b80-e0ec-11ea-93a5-7c217038deca.png"></td>
+        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416100-ff660080-e0ec-11ea-968f-2f6a64da2bf0.png"></td>
+    </tr>
+        <tr>
+        <th>What I do?</th>
+        <th>Work</th>
+        <th>Contact</th>
+    </tr>
+    <tr>
+        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416136-0bea5900-e0ed-11ea-9f9a-a5a2d0c6e3d7.png"></td>
+        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416179-1ad10b80-e0ed-11ea-9c19-30b457f8b77e.png"></td>
+        <td><img width="266" src="https://user-images.githubusercontent.com/66079830/90416260-363c1680-e0ed-11ea-9894-97f8792e7c44.png"></td>
+    </tr>
+</table>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ithansiyeon/portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
