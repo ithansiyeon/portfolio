@@ -21,9 +21,7 @@
     </tr>
     <tr>
         <th>프로젝트 개요</th>
-        <th>싱글페이지 포트폴리오 웹 사이트</th>
-        <th>개발 환경</th>
-        <th>Windows10</th>
+        <th colspan="3">싱글페이지 포트폴리오 웹 사이트</th>
     </tr>
     <tr>
         <th colspan="4">사용한 Skill 또는 지식</th>
