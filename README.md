@@ -1,11 +1,12 @@
 # SIYEON HAN's Portfolio
 
-**한시연의 포트폴리오 | [▶ Preview](https://ithansiyeon.github.io/portfolio/)** 
+**한시연의 포트폴리오 |
 
 ![SIYEON HAN's Portfolio](https://user-images.githubusercontent.com/66079830/90414723-1ad00c00-e0eb-11ea-9e81-0cc4a61bc5f9.png)
+###  [▶ Preview]
+<a href = "https://ithansiyeon.github.io/portfolio/">포트폴리오 바로가기</a>
 
 ### 👋 Introduction
-
 <table>
     <tr>
         <th>프로젝트명</th>
