@@ -1,6 +1,6 @@
 # SIYEON HAN's Portfolio
 
-**한시연의 포트폴리오 | [▶ Preview](http://127.0.0.1:5501/portfolio.html)** 
+**한시연의 포트폴리오 | [▶ Preview](https://ithansiyeon.github.io/portfolio/)** 
 
 ![SIYEON HAN's Portfolio](https://user-images.githubusercontent.com/66079830/90414723-1ad00c00-e0eb-11ea-9e81-0cc4a61bc5f9.png)
 
@@ -21,9 +21,7 @@
     </tr>
     <tr>
         <th>프로젝트 개요</th>
-        <th>싱글페이지 포트폴리오 웹 사이트</th>
-        <th>개발 환경</th>
-        <th>Windows10</th>
+        <th colspan="3">싱글페이지 포트폴리오 웹 사이트</th>
     </tr>
     <tr>
         <th colspan="4">사용한 Skill 또는 지식</th>
