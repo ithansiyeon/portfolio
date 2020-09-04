@@ -39,7 +39,7 @@
     </tr>
     <tr>
         <th>사용기술</th>
-        <th colspan="3">HTML5, CSS3 jQuery, Bootstrap</th>
+        <th colspan="3">HTML5, CSS3 JQuery, Bootstrap</th>
     </tr>
 </table>
 
